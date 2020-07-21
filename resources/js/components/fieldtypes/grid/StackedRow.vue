@@ -8,7 +8,7 @@
             class="grid-item-header"
             :class="{ [sortableHandleClass]: grid.isReorderable, 'hidden': ! grid.isReorderable }"
         >
-            {{ index }}
+            <span class="grid-item-index">{{ index }}</span>
             <span v-if="canDelete" class="icon icon-cross cursor-pointer" @click="$emit('removed', index)" />
         </div>
         <div class="publish-fields">
